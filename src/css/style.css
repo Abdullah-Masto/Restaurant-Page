@@ -133,3 +133,10 @@ body {
 #footer a {
   color: white;
 }
+
+@media (max-width: 375px) {
+  #content {
+    width: 98%;
+    margin: auto;
+  }
+}
