@@ -7,9 +7,9 @@ let link = document.querySelector("link[rel~='icon']");
 const header = document.createElement("header");
 const title = document.createElement("h1");
 const taps = document.createElement("div");
-const home = document.createElement("a");
-const menu = document.createElement("a");
-const contact = document.createElement("a");
+const home = document.createElement("button");
+const menu = document.createElement("button");
+const contact = document.createElement("button");
 
 if (!link) {
   link = document.createElement("link");
@@ -33,6 +33,10 @@ function pageLoad() {
   home.classList.add("tap");
   menu.classList.add("tap");
   contact.classList.add("tap");
+
+  home.id = "home";
+  menu.id = "menu";
+  contact.id = "contact";
 
   taps.id = "taps";
   taps.appendChild(home);
